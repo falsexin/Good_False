@@ -1,0 +1,581 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>笑话排行榜,笑话浏览排行--笑话,笑话大全.</title>
+<meta name="keywords" content="笑话排行榜,hot笑话排行,笑话大全" />
+<meta name="description" content="笑话排行榜提供种笑话评论排行,笑话浏览排行榜,笑话收藏排行,笑话得票排行,欢迎光临笑话排行榜!" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link href="css/jokeji.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="mobile-agent" content="format=xhtml; url=http://wap.jokeji.cn/list.asp">
+
+<script language="javascript" src="/inc/check.js"></script>
+
+<!-- 请置于所有广告位代码之前 -->
+<script src="http://dup.baidustatic.com/js/ds.js"></script>
+</head>
+
+<body>
+
+  <a name="atop" id="atop"></a>
+<div class="style_top">
+<div class="top">
+<div class="top_logo l_left"><a href="http://www.jokeji.cn/"><img src="/logo.gif" alt='笑话集' /></a></div>
+
+<div class="top_login l_right" id="userstat"><script language="javascript">check3('/inc/UserStat.asp','userstat');</script></div>
+<div class="clear"></div>
+
+<div class="top_menu">
+  <ul>
+    <li><a href="http://www.jokeji.cn" >首 页</a></li>
+    <li><a href="list.htm">最新笑话</a></li>
+    <li><a href="Keyword.htm">笑话分类</a></li>
+    <li><a href="hot.htm">笑话排行</a></li>
+    <li><a href="joke_top.htm">笑话风云榜</a></li>
+    <li><a href="http://www.jokeji.cn/yuanchuangxiaohua/list/" target="_blank">笑话大赛</a></li>
+    <li><a href="http://gaoxiao.jokeji.cn" target="_blank">搞笑图片</a></li>
+    <li><a href="http://photo.jokeji.cn" target="_blank">QQ图片大全</a></li>
+    <li style="width:92px;"><a href="http://mingyan.jokeji.cn/" target="_blank">名人名言</a></li>
+    
+  </ul>
+  <div class="top_count">集齐第 <script language="javascript" src="/inc/countjoke.asp"></script> 笑话</div>
+</div>
+<form action="/search.asp" name="mysearch" method="post" target="_self"> 
+   <div class="search_index">
+    <ul style="margin-top:6px;">
+      <li style="color:#4EAA00">搜索：</li>
+      <li><span id="cidselect">
+          <script language="javascript">check2('/inc/cid.asp','cidselect');</script>
+          </span></li>
+       <li><input name="keyword" id="keyword" type="text" size="24" maxlength="18" class="input" /></li>
+       <li><input type="image" src="/images/search.gif" border="0" alt="点击搜索笑话"/></li>
+  </ul>        
+</div>
+    </form>
+</div>
+
+<div class="top_adreg" style="width:960px; height:92px; background:#F5F5F5;">
+<!-- 广告位：频道页-960*90，所有TOP位置 -->
+<script>
+(function() {
+    var s = "_" + Math.random().toString(36).slice(2);
+    document.write('<div id="' + s + '"></div>');
+    (window.slotbydup=window.slotbydup || []).push({
+        id: '177689',
+        container: s,
+        size: '960,90',
+        display: 'inlay-fix'
+    });
+})();
+</script>
+</div>
+
+</div>
+<div class="clear"></div>
+  
+<div align="center">
+<table width="960" height="157" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:6px;">
+  <tr valign="top">
+    
+    <td width="650" align="left"><table width="640" height="24" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="499"><table width="450" border="0" cellpadding="0" cellspacing="0">
+          <tr align="left">
+            <td width="90"><table width="78" height="24" border="0" cellpadding="0" cellspacing="0" background="images/bbs1.gif">
+              <tr>
+                <td align="center" valign="bottom" class="top_navup">排行列表</td>
+              </tr>
+            </table></td>
+            <td width="90"><table width="78" height="24" border="0" cellpadding="0" cellspacing="0" background="images/bbs2.gif">
+              <tr>
+                <td align="center" valign="bottom" class="top_nav"><a href="hot.asp?action=brow">浏览最多</a></td>
+              </tr>
+            </table></td>
+            <td width="90"><table width="78" height="24" border="0" cellpadding="0" cellspacing="0" background="images/bbs2.gif">
+              <tr>
+                <td align="center" valign="bottom" class="top_nav"><a href="hot.asp?action=pl">评论最多</a></td>
+              </tr>
+            </table></td>
+            <td width="90"><table width="78" height="24" border="0" cellpadding="0" cellspacing="0" background="images/bbs2.gif">
+              <tr>
+                <td align="center" valign="bottom" class="top_nav"><a href="hot.asp?action=fav">收藏最多</a></td>
+              </tr>
+            </table></td>
+            <td width="90"><table width="78" height="24" border="0" cellpadding="0" cellspacing="0" background="images/bbs2.gif">
+              <tr>
+                <td align="center" valign="bottom" class="top_nav"><a href="hot.asp?action=tp">得票最多</a></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table>
+        </td>
+        <td width="421" align="right" valign="bottom">&nbsp;</td>
+      </tr>
+      <tr bgcolor="#F3F3F3">
+      <td height="2" colspan="2"></td>
+      </tr>
+    </table>
+    
+
+
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/冷笑话/20100204111047.htm" class="main_14" target="_blank">一句话的鬼故事..........</a></td>
+        <td width="124" align="left">浏览:301315</td>
+        <td width="96" align="left"><span class="date">
+          2010-6-21</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/冷笑话/20111221014950.htm" class="main_14" target="_blank">经典又耐人寻味的一组冷笑话</a></td>
+        <td width="124" align="left">浏览:298769</td>
+        <td width="96" align="left"><span class="date">
+          2011-12-21</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/bxxh/20091013194405.htm" class="main_14" target="_blank">幽默笑话,经典幽默笑话8个,哈哈~~</a></td>
+        <td width="124" align="left">浏览:297324</td>
+        <td width="96" align="left"><span class="date">
+          2009-10-13</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/冷笑话/20120324002828.htm" class="main_14" target="_blank">生活小笑话,爆笑更冷人</a></td>
+        <td width="124" align="left">浏览:291546</td>
+        <td width="96" align="left"><span class="date">
+          2012-3-24</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/jt/20130226000247.htm" class="main_14" target="_blank">生活乐事,爆笑父子</a></td>
+        <td width="124" align="left">浏览:286336</td>
+        <td width="96" align="left"><span class="date">
+          2013-2-26</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/xy/20130227000306.htm" class="main_14" target="_blank">同学,你这分明是和老师过不去啊</a></td>
+        <td width="124" align="left">浏览:275249</td>
+        <td width="96" align="left"><span class="date">
+          2013-2-27</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/bxnn/20100614190028.htm" class="main_14" target="_blank">学生时候的爆笑糗事。</a></td>
+        <td width="124" align="left">浏览:273361</td>
+        <td width="96" align="left"><span class="date">
+          2010-6-14</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/yr/20100427001706.htm" class="main_14" target="_blank">是幽默还是愚昧!</a></td>
+        <td width="124" align="left">浏览:273320</td>
+        <td width="96" align="left"><span class="date">
+          2010-4-27</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/ym/20100706145230.htm" class="main_14" target="_blank">爆笑男女笑话,一个字笑！</a></td>
+        <td width="124" align="left">浏览:272678</td>
+        <td width="96" align="left"><span class="date">
+          2010-7-6</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/fq/20091013145914.htm" class="main_14" target="_blank">家有色妻</a></td>
+        <td width="124" align="left">浏览:268468</td>
+        <td width="96" align="left"><span class="date">
+          2009-10-13</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/ym/20100629103903.htm" class="main_14" target="_blank">幽默小笑话 让你开心一下~</a></td>
+        <td width="124" align="left">浏览:265787</td>
+        <td width="96" align="left"><span class="date">
+          2010-6-29</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/冷笑话/20120606000911.htm" class="main_14" target="_blank">保证够冷够爆笑,嘿嘿</a></td>
+        <td width="124" align="left">浏览:263823</td>
+        <td width="96" align="left"><span class="date">
+          2012-6-6</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/xy/20100922004508.htm" class="main_14" target="_blank">课堂里面的爆笑。</a></td>
+        <td width="124" align="left">浏览:260743</td>
+        <td width="96" align="left"><span class="date">
+          2010-9-22</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/dx/20090925224315.htm" class="main_14" target="_blank">经典短信笑话串烧</a></td>
+        <td width="124" align="left">浏览:259947</td>
+        <td width="96" align="left"><span class="date">
+          2009-9-25</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/jr/20090925233033.htm" class="main_14" target="_blank">经典国庆搞笑短信</a></td>
+        <td width="124" align="left">浏览:259821</td>
+        <td width="96" align="left"><span class="date">
+          2009-9-25</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/bxxh/20090818103647.htm" class="main_14" target="_blank">十个暴笑口误</a></td>
+        <td width="124" align="left">浏览:257591</td>
+        <td width="96" align="left"><span class="date">
+          2009-8-18</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/zh/20081006220812.htm" class="main_14" target="_blank">精悍的笑话10篇</a></td>
+        <td width="124" align="left">浏览:256640</td>
+        <td width="96" align="left"><span class="date">
+          2008-10-6</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/gj/20120912000331.htm" class="main_14" target="_blank">笑话气死小日本</a></td>
+        <td width="124" align="left">浏览:256403</td>
+        <td width="96" align="left"><span class="date">
+          2012-9-12</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/ym/20100702160731.htm" class="main_14" target="_blank">小夫妻的爆笑趣事</a></td>
+        <td width="124" align="left">浏览:256008</td>
+        <td width="96" align="left"><span class="date">
+          2010-7-2</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/bxxh/20100513212109.htm" class="main_14" target="_blank">看懂的都是流()氓，看不懂的学学怎么变成流()氓。</a></td>
+        <td width="124" align="left">浏览:253951</td>
+        <td width="96" align="left"><span class="date">
+          2010-5-13</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/dx/20120206002009.htm" class="main_14" target="_blank">一些逗人风趣的幽默短信</a></td>
+        <td width="124" align="left">浏览:251260</td>
+        <td width="96" align="left"><span class="date">
+          2012-2-6</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      <table width="646" height="30" border="0" cellpadding="0" cellspacing="0" background="images/d01.gif">
+      <tr>
+        <td width="18" align="left"><img src="images/d02.gif" width="8" height="10" /></td>
+        <td width="408" align="left"><a href="/jokehtml/ym/20100909210554.htm" class="main_14" target="_blank">超级搞笑的职场与人生总结笑话</a></td>
+        <td width="124" align="left">浏览:251229</td>
+        <td width="96" align="left"><span class="date">
+          2010-9-9</span></td>
+        </tr>
+    </table>	  
+      <table width="200" height="6" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+
+      </td>
+      
+<td width="310" align="right">
+
+<table width="300" border="0" cellpadding="0" cellspacing="0" style=" margin-bottom:4px; margin-top:22px;">
+  <tr>
+    <td valign="top" height="260">
+<!-- 广告位：百度300*250 +QQ表情内页 1 -->
+<script>
+(function() {
+    var s = "_" + Math.random().toString(36).slice(2);
+    document.write('<div id="' + s + '"></div>');
+    (window.slotbydup=window.slotbydup || []).push({
+        id: '348429',
+        container: s,
+        size: '300,250',
+        display: 'inlay-fix'
+    });
+})();
+</script>
+        </td>
+  </tr>
+  <tr>
+    <td valign="top"height="260" >
+<!-- 广告位：谷歌300*250 +QQ表情内页 2 -->
+<script>
+(function() {
+    var s = "_" + Math.random().toString(36).slice(2);
+    document.write('<div id="' + s + '"></div>');
+    (window.slotbydup=window.slotbydup || []).push({
+        id: '348430',
+        container: s,
+        size: '300,250',
+        display: 'inlay-fix'
+    });
+})();
+</script>
+        </td>
+  </tr>
+  <tr>
+
+<td valign="top"height="260" >
+
+<!-- 广告位：排行+分类+搜素 300-250 3 sogou -->
+<script>
+(function() {
+    var s = "_" + Math.random().toString(36).slice(2);
+    document.write('<div id="' + s + '"></div>');
+    (window.slotbydup=window.slotbydup || []).push({
+        id: '535483',
+        container: s,
+        size: '300,250',
+        display: 'inlay-fix'
+    });
+})();
+</script>
+
+</td>
+  </tr>
+</table>
+
+</td>
+  </tr>
+</table>
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+	
+	
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="left_title">
+      <tr>
+        <td height="28" align="center"><span class="main_title">
+
+        <table cellpadding="0" cellspacing="1" align="center"><form action="hot.asp?" method="post" name="PageForm" onsubmit="javascript:window.open('hot.asp?&me_page='+ PageForm.page.value,'_self');return false;">
+<tr align="center" height="20">
+<td>&nbsp;<a href="hot.asp?me_page=1" ><img src="/images/First.gif" border="0" alt="首页"/></a>&nbsp;</td>
+<td>&nbsp;<a href="hot.asp?me_page=1">1</a>&nbsp;</td>
+<td>&nbsp;<a href="hot.asp?me_page=2">2</a>&nbsp;</td>
+<td>&nbsp;<a href="hot.asp?me_page=3">3</a>&nbsp;</td>
+<td>&nbsp;<a href="hot.asp?me_page=4">4</a>&nbsp;</td>
+<td>&nbsp;<u><b>5</b></u>&nbsp;</td>
+<td>&nbsp;<a href="hot.asp?me_page=6">6</a>&nbsp;</td>
+<td>&nbsp;<a href="hot.asp?me_page=7">7</a>&nbsp;</td>
+<td>&nbsp;<a href="hot.asp?me_page=8">8</a>&nbsp;</td>
+<td>&nbsp;<a href="hot.asp?me_page=9">9</a>&nbsp;</td>
+<td>&nbsp;<a href="hot.asp?me_page=10">10</a>&nbsp;</td>
+<td>&nbsp;<a href="hot.asp?me_page=15" ><img src="/images/Next.gif" border="0" alt="下十页"/></a></td>
+<td>&nbsp;<a href="hot.asp?me_page=599"><img src="/images/Last.gif" border="0" alt="尾页"/></a>&nbsp;</td>
+<td><input type="text" name="page" size="3" value="5" class="PageInput"/><input type="submit" value="GO" name="submit" class="PageInput"/></td>
+</tr></form></table>
+
+        
+        </span></td>
+      </tr>
+    </table>
+	
+	</td>
+  </tr>
+</table>
+</div>
+
+<div class="clear" style="margin-top:6px; "></div>
+<div class="foot">    
+
+  
+    
+<div class="footer">
+Copyright &copy; <a href="http://www.Jokeji.cn">笑话集 Jokeji.cn</a>  All Rights Reserved 沪ICP备09013142号 业务合作请发邮件到:<a href="mailto:jokeji@163.com">jokeji@163.com</a><br>
+如果你喜欢本站,别忘了把本站告诉给你QQ上的朋友哦! 试试<strong> Ctrl+D</strong> 有意外惊喜哦~<br />
+
+<script src="http://s23.cnzz.com/stat.php?id=3455622&web_id=3455622&show=pic1" language="JavaScript"></script>
+
+<script src="http://s16.cnzz.com/stat.php?id=3753434&web_id=3753434&show=pic1" language="JavaScript"></script>
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F602dddd7b88df76981923e731cced763' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+</div>
+</div>
+
+</body>
+</html>
