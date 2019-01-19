@@ -1,0 +1,14 @@
+<div class="el">ssad
+                        <p class="t1 ">
+                            <em class="check" name="delivery_em" onclick="checkboxClick(this)"></em>
+                            <input class="checkbox" type="checkbox" name="delivery_jobid" value="101466208" jt="0" style="display:none">
+                            <span>
+                                <a target="_blank" title="Python教研经理" href="https://jobs.51job.com/shanghai-xhq/101466208.html?s=01&amp;t=0" onmousedown="">
+                                    Python教研经理                                </a>
+                            </span>
+                                                                                </p>
+                        <span class="t2"><a target="_blank" title="妙小程" href="https://jobs.51job.com/all/co4809293.html">妙小程</a></span>
+                        <span class="t3">上海-徐汇区</span>
+                        <span class="t4">1.5-2万/月</span>
+                        <span class="t5">01-18</span>
+                    </div>

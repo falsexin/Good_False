@@ -46,6 +46,7 @@ def baikeSpider(url, startPage, endPage):
     :return:
     '''
     headers = {'User-Agent': 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)'}
+    print(startPage)
     for page in range(startPage, endPage + 1):
         fullurl = url + str(page)
         # 请求指定的页面
@@ -84,16 +85,16 @@ def baikeSpider(url, startPage, endPage):
                 print('图片：', base_url1+i)
                 req = request.Request(base_url1+i, headers=headers)
                 repsonse = request.urlopen(req)
-                with open('images/baike/img_' + str(time.time())+ '.jpg', 'wb') as file:
-                        file.write(repsonse.read())
+                # with open('images/baike/img_' + str(time.time())+ '.jpg', 'wb') as file:
+                #         file.write(repsonse.read())
             neishipin = selector.xpath('//video[@id="article-video"]/source/@src')
 
             for i in neishipin:
                 print('视频：', i)
                 req = request.Request(i, headers=headers)
                 repsonse = request.urlopen(req)
-                with open('images/baike/vido_' + str(time.time()) + '.mp4', 'wb') as file:
-                        file.write(repsonse.read())
+                # with open('images/baike/vido_' + str(time.time()) + '.mp4', 'wb') as file:
+                #         file.write(repsonse.read())
 
             author = link.xpath('.//span[@class="recmd-name"]/text()')[0]
             print('author:', author)
