@@ -53,3 +53,4 @@ class ExampleSpider(scrapy.Spider):
             item['list_info_pinglunshu'] = list_info_pinglunshu
             item['list_info_user'] = list_info_user
             yield item
+#             sdas
